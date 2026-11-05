@@ -49,6 +49,6 @@ Each package owns only this provider and its passive documentation. Its `Replace
 ## Two installed files
 
 Only the compiled clock under `/System/Resources/Clocks/` and its illustrated
-PDF under `/System/Resources/Documentation/Clock-Babylonian-Ancient/` are installed.
+PDF under `/System/Resources/Documentation/Clock-Babylonian-Ancient.pdf` are installed.
 Developer documents remain in GitHub; native verification metadata stays in
 the Debian control database rather than a separate BUILD-INFO file.

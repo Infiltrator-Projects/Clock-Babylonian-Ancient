@@ -14,7 +14,7 @@ This resource owns its clock rendering and next visible update boundary. The clo
 
 ## Implementation status
 
-The source, tests and combined package still belong to [Libraries/Common](https://github.com/Infiltrator-Projects/Libraries/tree/main/resources/temporal). This repository documents the independent `.so` resource that is intended to be migrated; it does **not** claim a working standalone installer or release.
+This repository now contains its own clock provider implementation, regression fixtures, Makefile, and independent `.so` build. The Makefile offers release and packaging targets through pinned Common tooling; this does not establish that a GitHub release has already been published. The historical implementation in [Libraries/Common](https://github.com/Infiltrator-Projects/Libraries/tree/main/resources/temporal) remains available for comparison.
 
 ## Source documentation
 

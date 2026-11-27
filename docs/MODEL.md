@@ -4,7 +4,7 @@
 
 ## Defined behaviour
 
-Ancient Mesopotamian astronomical time: 12 fixed bēru per sunset-to-sunset day, 30 UŠ per bēru (4 SI minutes per UŠ). Requires a valid computed sunset as the daily origin.
+Ancient Mesopotamian astronomical time: 12 fixed bēru per nominal 24-hour day, 30 UŠ per bēru (4 SI minutes per UŠ), counted from the most recent computed sunset. Actual sunset intervals vary; the count is not clamped. Requires a valid computed sunset as the daily origin.
 
 **Historical interpretation:** bēru and UŠ elapsed from sunset.
 
@@ -20,6 +20,6 @@ This repository now contains its own clock provider implementation, regression f
 
 [Calendar's clock model matrix](https://github.com/Infiltrator-Projects/Calendar/blob/main/docs/MODELS.md) · [Historical fidelity audit](https://github.com/Infiltrator-Projects/Libraries/blob/main/docs/TEMPORAL_HISTORICAL_FIDELITY.md) · [Runtime ABI](https://github.com/Infiltrator-Projects/Libraries/blob/main/docs/TEMPORAL_PROVIDERS.md)
 
-## Source copy status
+## Source provenance
 
-The model-specific implementation and required helpers are now copied into this repository. Its behaviour was compared with the original Common 1.19.78 provider; this adds copy-regression evidence, not a new independent historical audit. See [source provenance](../SOURCE.md) and [validation results](../VALIDATION-RESULTS.json). The original Common implementation remains in place.
+The original Common 1.19.78 extraction is historical evidence. Current builds use the authoritative pinned Common submodule. See [source record](../SOURCE.md) and [recorded results](../VALIDATION-RESULTS.json). The operational model, worked examples and limitations are maintained in [GUIDE.json](GUIDE.json).

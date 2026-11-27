@@ -12,7 +12,7 @@ The clock owns both its notation and next-visible-tick scheduling. Its output ne
 
 ## Status
 
-**Independent source, native installation and releases.** This repository contains the implementation of `babylonian-ancient`, the supporting code it needs, a one-provider `Makefile` and focused regression fixtures. The copy is based on Common 1.19.78 at `8d60662114e3`; the original Common source remains unchanged.
+**Independent source, native installation and releases.** This repository contains the implementation of `babylonian-ancient`, the supporting code it needs, a one-provider `Makefile` and focused regression fixtures. The initial extraction was based on Common 1.19.78; current builds link the authoritative Common submodule pinned by the Makefile.
 
 Run `make` to produce `build/Ancient Babylonian Beru US Clock.so` and `make check` to run this provider's checks. The Makefile builds a pinned Common static archive from the `common` Git submodule; initialise it with `git submodule update --init -- common` before running `make`. Independent releases now provide a portable amd64 Debian package, a lightweight hardware-native network installer; GitHub supplies the automatic tag source ZIP. The original Common source is retained.
 
@@ -54,3 +54,7 @@ Developer documents remain in GitHub; native verification metadata stays in
 the Debian control database rather than a separate BUILD-INFO file.
 
 The native RUN downloads the exact provider commit and pinned Common submodule, verifies their identities and builds locally. No source or binary payload is embedded.
+
+## User manual
+
+The installed PDF is generated from [docs/GUIDE.json](docs/GUIDE.json) using the pinned Common renderer.
